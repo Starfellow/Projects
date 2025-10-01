@@ -550,4 +550,62 @@ footer a:hover {
   font-style: italic;
   color: #006400; /* dark green */
   margin-top: -5px;
+
+}
+nav {
+  background-color: green;
+}
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar > li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  display: block;
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: darkgreen;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.dropdown li {
+  width: 100%;
+}
+
+.dropdown a {
+  color: black;
+  padding: 10px 16px;
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+.navbar li:hover > .dropdown {
+  display: block;
 }
